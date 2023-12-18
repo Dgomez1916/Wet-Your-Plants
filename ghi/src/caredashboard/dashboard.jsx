@@ -14,7 +14,7 @@ import WeatherWidget from './weatherwidget'
 import DailyTodoList from './dailytodolist'
 import AddTodoDialog from '../plant_detail/addtododialog'
 import './dashboard.css'
-import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { FormControl, InputLabel, Select, MenuItem } from '@mui/material'
 
 const Dashboard = ({ userId }) => {
     const [showDialog, setShowDialog] = useState(false)
@@ -23,8 +23,6 @@ const Dashboard = ({ userId }) => {
     const [weatherApiKey, setWeatherApiKey] = useState('')
     const [manualZipcode, setManualZipcode] = useState('')
     const [manualWeatherData, setManualWeatherData] = useState(null)
-
-
 
     // useEffect(() => {
     //     const fetchWeatherByLocation = async () => {
@@ -133,12 +131,7 @@ const Dashboard = ({ userId }) => {
                                 value={manualZipcode}
                                 onChange={handleManualZipcodeChange}
                             />
-                            <Button
-                                className="button"
-                                onClick={fetchManualWeather}
-                            >
-                                Fetch Manual Weather
-                            </Button>
+
                             {manualWeatherData && (
                                 <div>
                                     <Typography variant="h6">

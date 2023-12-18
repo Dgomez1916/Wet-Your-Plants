@@ -120,6 +120,8 @@ const Greenhouse = () => {
                         <AddPlantDialog
                             open={isAddPlantDialogOpen}
                             onClose={handleAddPlantDialogClose}
+                            plants={plants}
+                            setPlants={setPlants}
                         />
                     </div>
                 </div>
